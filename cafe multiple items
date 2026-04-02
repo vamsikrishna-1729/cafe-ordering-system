@@ -1,0 +1,52 @@
+print("welcome to cafecorner")
+menu  = {
+    'pizza' : 40,
+    'coffee' : 20,
+    'cakes' : 15,
+    'burger' :60,
+    'pasta' : 50,
+    'water' : 20,
+}
+print("pizza :Rs 40/-\ncoffee :Rs 20/-\ncakes :Rs 15/-\nburger :Rs 60/-\npasta :Rs 50/-\nwater :Rs20/-")
+
+total = 0
+# First item
+item1 = input("Enter first item: ").lower()
+qty1 = int(input("Enter quantity: "))
+
+# Second item
+item2 = input("Enter second item: ").lower()
+qty2 = int(input("Enter quantity: "))
+
+# Second item
+item3 = input("Enter third item: ").lower()
+qty3 = int(input("Enter quantity: "))
+
+total = 0
+
+# Calculate first item
+if item1 in menu:
+    total += menu[item1] * qty1
+else:
+    print(f"{item1} not available")
+
+# Calculate second item
+if item2 in menu:
+    total += menu[item2] * qty2
+else:
+    print(f"{item2} not available")
+
+
+
+# Calculate third item
+if another_item =='yes':
+    if item3 in menu:
+       total += menu[item3] * qty3
+    else:
+       print(f"{item3} not available")
+if another_item =='no':
+    print(f"\nTotal bill: ₹{total}")
+    
+
+# Final bill
+print(f"\nTotal bill: ₹{total}")
